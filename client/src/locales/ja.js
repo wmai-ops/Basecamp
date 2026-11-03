@@ -6,6 +6,13 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
+    reports: 'レポート',
+    mainNavigation: 'メインナビゲーション',
+    collapseSidebar: 'サイドバーを折りたたむ',
+    expandSidebar: 'サイドバーを展開',
+    openMenu: 'メニューを開く',
+    closeMenu: 'メニューを閉じる',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +113,8 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '発注済みオーダー',
+    noSubmittedOrders: '補充発注はまだ送信されていません。',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,8 +134,44 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: '納品リードタイム'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算に基づく補充推奨を確認し、補充発注を行います',
+    budgetLabel: '補充予算',
+    recommendations: '推奨品目',
+    summary: {
+      totalCost: '合計コスト',
+      remainingBudget: '残予算',
+      itemCount: '品目数'
+    },
+    table: {
+      item: '品目',
+      category: 'カテゴリ',
+      trend: 'トレンド',
+      onHand: '手持在庫',
+      forecastedDemand: '予測需要',
+      shortfall: '不足数',
+      quantity: '推奨数量',
+      unitCost: '単価',
+      lineTotal: '小計',
+      leadTime: 'リードタイム'
+    },
+    empty: 'この予算では補充推奨はありません。',
+    placeOrder: '発注する',
+    submitting: '送信中...',
+    loadError: '推奨の読み込みに失敗しました',
+    orderError: '発注に失敗しました',
+    orderSuccess: '発注が完了しました',
+    orderNumber: '注文番号',
+    expectedDelivery: '予定配達日',
+    leadTime: 'リードタイム',
+    viewOrders: '注文画面で確認'
   },
 
   // Finance/Spending
@@ -203,6 +248,7 @@ export default {
     delivered: '配達済み',
     shipped: '出荷済み',
     processing: '処理中',
+    submitted: '発注済み',
     backordered: 'バックオーダー',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
@@ -323,7 +369,9 @@ export default {
     search: '検索',
     filter: 'フィルター',
     export: 'エクスポート',
-    items: '件'
+    items: '件',
+    dayCount: '{count}日',
+    daysCount: '{count}日'
   },
 
   // Product Names

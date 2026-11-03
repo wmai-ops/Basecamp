@@ -152,6 +152,13 @@ const handleLogout = () => {
   letter-spacing: 0.025em;
 }
 
+/* Keep the top bar within narrow screens: avatar only */
+@media (max-width: 480px) {
+  .profile-name {
+    display: none;
+  }
+}
+
 .profile-name {
   font-size: 0.875rem;
   font-weight: 500;
