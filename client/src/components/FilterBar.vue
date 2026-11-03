@@ -106,21 +106,23 @@ export default {
   border-bottom: 1px solid #e2e8f0;
   padding: 0.75rem 0;
   position: sticky;
-  top: 70px;
-  z-index: 90;
+  top: var(--topbar-h);
+  z-index: var(--z-filterbar);
 }
 
 .filters-container {
-  max-width: 1600px;
+  max-width: var(--content-max);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--content-pad);
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+/* Wrap: the content column is narrower now that the sidebar takes 248px */
 .filters-grid {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
   flex: 1;

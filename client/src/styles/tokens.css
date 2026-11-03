@@ -1,0 +1,76 @@
+/* Design tokens: single source for color, spacing, type, radii and layout. */
+:root {
+  /* Color */
+  --ink: #0f172a;
+  --text: #1e293b;
+  --text-soft: #334155;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --line-strong: #cbd5e1;
+  --canvas: #f8fafc;
+  --surface: #ffffff;
+  --hover: #f1f5f9;
+  --primary: #2563eb;
+  --primary-soft: #eff6ff;
+  --success: #059669;
+  --warning: #ea580c;
+  --danger: #dc2626;
+
+  /* Badge tints */
+  --success-bg: #d1fae5;
+  --success-fg: #065f46;
+  --warning-bg: #fed7aa;
+  --warning-fg: #92400e;
+  --danger-bg: #fecaca;
+  --danger-fg: #991b1b;
+  --info-bg: #dbeafe;
+  --info-fg: #1e40af;
+  --stable-bg: #e0e7ff;
+  --stable-fg: #3730a3;
+  --danger-soft: #fef2f2;
+
+  /* Spacing, 4px base */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 48px;
+
+  /* Type scale */
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+
+  /* Radii by rank */
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-badge: 6px;
+
+  /* Elevation: floating layers only */
+  --shadow-float: 0 10px 25px rgba(15, 23, 42, 0.12);
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --sidebar-w-collapsed: 72px;
+  --topbar-h: 56px;
+  --content-max: 1440px;
+  --content-pad: 24px;
+
+  /* Layers: modals (1000+) always sit above these */
+  --z-filterbar: 20;
+  --z-topbar: 30;
+  --z-backdrop: 40;
+  --z-sidebar: 50;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --content-pad: 16px;
+  }
+}

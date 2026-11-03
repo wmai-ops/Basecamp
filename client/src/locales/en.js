@@ -6,6 +6,13 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
+    reports: 'Reports',
+    mainNavigation: 'Main navigation',
+    collapseSidebar: 'Collapse sidebar',
+    expandSidebar: 'Expand sidebar',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +113,8 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No restocking orders have been submitted yet.',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -125,8 +134,44 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Delivery Lead Time'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Get budget-based restocking recommendations and place a restock order',
+    budgetLabel: 'Restocking Budget',
+    recommendations: 'Recommended Items',
+    summary: {
+      totalCost: 'Total Cost',
+      remainingBudget: 'Remaining Budget',
+      itemCount: 'Items'
+    },
+    table: {
+      item: 'Item',
+      category: 'Category',
+      trend: 'Trend',
+      onHand: 'On Hand',
+      forecastedDemand: 'Forecasted Demand',
+      shortfall: 'Shortfall',
+      quantity: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
+    },
+    empty: 'No restocking recommended for this budget.',
+    placeOrder: 'Place Order',
+    submitting: 'Submitting...',
+    loadError: 'Failed to load recommendations',
+    orderError: 'Failed to place order',
+    orderSuccess: 'Order placed',
+    orderNumber: 'Order Number',
+    expectedDelivery: 'Expected Delivery',
+    leadTime: 'Lead Time',
+    viewOrders: 'View in Orders'
   },
 
   // Finance/Spending
@@ -203,6 +248,7 @@ export default {
     delivered: 'Delivered',
     shipped: 'Shipped',
     processing: 'Processing',
+    submitted: 'Submitted',
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
@@ -323,6 +369,8 @@ export default {
     search: 'Search',
     filter: 'Filter',
     export: 'Export',
-    items: 'items'
+    items: 'items',
+    dayCount: '{count} day',
+    daysCount: '{count} days'
   }
 }
